@@ -35,18 +35,45 @@ body, html{
 }
 
 header{
+    width: 100%;
     background-color: var(--gray-30);
 }
 
 #divheader{
     margin: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-flow: row wrap-reverse;
     border: 2px dashed #000000;
     justify-content: space-between;
 }
+
+header h1{
+    font: 600 1.4em "Roboto", sans-serif;
+    padding: 0px 10px;
+}
+
+header span{
+    color: var(--brand-color);
+}
+
+header p{
+    font: 400 0.8em "Roboto", sans-serif;
+    padding: 0px 10px;
+}
+
+header button{
+    font: 400 0.8em "Roboto", sans-serif;
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--brand-color);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}   
 
 #divimg{
     width: 250px;
