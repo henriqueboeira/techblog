@@ -27,9 +27,14 @@ header h1, h2, p, main h1, h2, p{
 
 }
 
-.container{
-    width: 100%;
+header{
     background-color: var(--gray-30);
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap-reverse;
@@ -46,7 +51,12 @@ header div{
 .titulo{
     align-self: center;
     width: 50%;
-    min-width: ;
+    min-width: 448px;
+}
+
+.titulo h1{
+    font-size: 1em;
+    font-size: clamp(1.5em, 3vw, 2em);
 }
 
 .titulo span{
@@ -64,4 +74,49 @@ header img{
     margin-top: 20px;
     padding: 20px;
     width: 300px;
+}
+
+main{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+main h1{
+    margin: 100px 0px;
+}
+
+#caixa{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+article{
+    width: 320px;
+    height: 300px;
+    border: 1px solid var(--gray-20);
+}
+
+article img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+article h2{
+    padding: 15px;
+}
+
+article p{
+    padding: 0px 15px 10px 15px ;
+    font-size: .9em;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+article h2{
+    font-size: 1em;
 }
