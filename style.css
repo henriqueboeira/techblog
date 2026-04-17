@@ -21,6 +21,11 @@
     box-sizing: border-box;
 }
 
+body{
+    width: clamp(300px, 100%, 100vw);
+    height: 100vh;
+}
+
 header h1, h2, p, main h1, h2, p{
     font-family: 'Roboto', sans-serif;
     white-space: pre-line;
@@ -29,6 +34,7 @@ header h1, h2, p, main h1, h2, p{
 
 header{
     background-color: var(--gray-30);
+    min-width: 300px;
 }
 
 .container{
