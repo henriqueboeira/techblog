@@ -88,12 +88,15 @@ header img{
 
 main{
     margin: auto;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
 }
 
 main h1{
+    width: 100%;
+    max-width: 350px;
     margin: 100px 0px;
+    
 }
 
 #caixa{
@@ -106,9 +109,15 @@ main h1{
 }
 
 article{
+    border-radius: 10px 10px 0px 0px;
     width: 320px;
     height: 300px;
     border: 1px solid var(--gray-20);
+    cursor: pointer;
+}
+
+article:hover{
+    transform: scale(1.1);
 }
 
 article img{
@@ -177,3 +186,4 @@ form button{
     border-radius: 5px;
     color: var(--white);
 }
+
